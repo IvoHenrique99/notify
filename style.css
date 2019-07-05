@@ -1,9 +1,15 @@
 body{
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-areas: "header header header"
+                         "navbar navbar navbar"
+                         "
+                         
 }
 
 header{
-    background-image: url("image/banner.png");
+    background-color: aqua;
     border-top: 10px  solid greenyellow;
+    height: 78vh;
 }
