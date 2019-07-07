@@ -112,6 +112,130 @@ header figure img{
     width: 22vw;
 }
 
+/* ========================= Linha 3 ================================================ */
+.getNotified{
+    align-items: center;
+    background-color: #E3E3E3;
+    display: flex;
+    height: 450px;
+    justify-content: space-around;  
+}
+
+.getNotified div h3{
+    padding-left: 110px;
+}
+
+.getNotified div p{
+    opacity: 0.6;
+    line-height: 1.4;
+    padding-left: 110px;
+    padding-right: 93px;
+}
+
+.getNotified div input{
+    border-color: #cccccc;
+	border-width: 2px 2px 2px 2px;
+	border-style: none;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 12px;
+    padding-right: 100px;
+    margin-left: 103px;
+    margin-bottom: 77px;
+}
+
+.getNotified div button{
+    color:#fff;
+	background-color:#333333;
+	position:absolute;
+	border-color: #333333;
+	border-style: none;
+	-moz-border-radius: 0px 10px 10px 0px;
+	-webkit-border-radius: 0px 10px 10px 0px;
+    padding-top: 11.8px;
+    padding-right: 11.8px;
+    padding-bottom: 12.2px;
+    padding-left: 11.8px;   
+	left: 385px;    
+}
+
+.getNotified button:hover{
+    background-color: #2CBF60;
+    border-color: #2CBF60;
+    opacity: 1;
+}
+.getNotified div img{
+    width: 500px;
+    height: auto;
+    padding-right: 105px;
+}
+
+/* ========================= Linha 4 ================================================ */
+
+.people{    
+    align-items: flex-start;
+    display: flex;
+    height: 355px;
+}
+
+.people p{
+    margin-left: 238px;
+    opacity: 0.6;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.people h4{
+    margin-left: 238px;
+    text-align: center;
+}
+
+.container {
+    margin-left: 280px;
+
+}
+.container img {
+        height: auto;
+        width: 30px;
+}
+
+.people h3{
+    margin-left: 238px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.iconMedia{
+    margin-left: 477px;
+}
+
+.iconMedia img{
+    margin: 10px;
+    opacity: 0.5;
+}
+
+.iconMedia img:hover{
+    background-color: #2CBF60;
+    opacity: 1;
+}
+
+footer{
+	background-color:#E3E3E3;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 46px;
+}
+
+.links a{
+    justify-content: space-between;
+    text-decoration: none;
+    color: #333333;
+    opacity: 0.6;
+    margin-right: 4px;
+}
+
 @media(max-width: 800px){
 
 /* =========================== LINHA 1 ============================================ */
