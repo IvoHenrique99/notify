@@ -3,17 +3,17 @@ body{
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-areas: "header"
+    /* grid-template-areas: "header"
     "section-nav"
     "section-input"
     "section-social"
-    "footer";    
+    "footer";     */
 }
+/* =========================== LINHA 1 ============================================ */
 
 header{
     align-items: center;
     background-image: url(images/banner.png); 
-    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat; 
     border-top: 1vh  solid #2CBF60;
@@ -21,8 +21,9 @@ header{
     display: flex;
     justify-content: space-around;
     height: 70vh;
+    
 }
-aside{
+header aside{
     display: flex;
     flex-direction: column;
     width: 30vw;
@@ -30,73 +31,137 @@ aside{
     justify-content: center;
 }
 
-article{
+header article{
     display: flex;
 }
-article h1{
+header article h1{
     font-family: 'Pacifico', cursive;
     font-size: 3.5rem;
     margin: 0px
 }
-article h1:nth-child(2){
+header article h1:nth-child(2){
     color: #2CBF60;
 }
-aside p{
+header aside p{
     font-size: 1.2rem;
 }
-aside nav{
+header aside nav{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 30%;
 }
-a{
+header a{
     align-items: center;
-    background-color: #333;
+    background-color: #333333;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     margin: 5px;
+    opacity: 0.6;
     padding: 10px;
 }
-a:hover{
+header a:hover{
     background-color: #2CBF60;
+    opacity: 1;
 }
 
-figure{
+header figure{
     align-items: flex-end;
     display: flex;
     height: 100%;
 }
-figure img{
+header figure img{
     height: 60vh;
 }
 
+/* ========================= Linha 2 ================================================ */
+
+.section-option{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40vh;
+}
+.section-option div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-option div a{
+    align-items: center;
+    background-color: #2CBF60;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    opacity: 0.9;
+    padding: 20px;
+}
+.section-option div a:hover{
+    background-color: #333333;
+}
+.section-option div h3{
+    margin: 0px;
+}
+.section-option div p{
+    opacity: 0.6;
+    text-align: center;
+    white-space: normal;
+    width: 22vw;
+}
+
 @media(max-width: 800px){
+
+/* =========================== LINHA 1 ============================================ */
     header{
         height: 35vh;
     }
-    aside{
+    header aside{
         display: block;
         width: 100%;
         height: auto;
     }
     
-    figure{
+    header figure{
         display: none;
     }
-    article{
+    header article{
         margin-left: 15px;
     }
-    p{
+    header p{
         display: flex;
         justify-content: center;
         margin: 0px;
         white-space: pre;
     }
-    aside nav{
+    header aside nav{
         display: flex;
         justify-content: flex-end;
         width: 98%;    
     }
+
+/* ========================= Linha 2 ================================================ */
+
+.section-option{
+    align-items: flex-start;
+}
+.section-option div a{
+    padding: 10px;
+
+}
+.section-option div img{
+    height: 4vh;
+}
+.section-option div p{
+    display: none;
+}
+.section-option div h3{
+    font-size: 0.9rem;
+    padding: 3px
+    margin: 2px;
+    text-align: center;
+
+}
 }   
