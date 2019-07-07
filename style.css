@@ -26,9 +26,10 @@ header{
 header aside{
     display: flex;
     flex-direction: column;
-    width: 30vw;
     height: 50vh;
     justify-content: center;
+    margin: 20px;
+    width: 30vw;
 }
 
 header article{
@@ -108,11 +109,9 @@ header figure img{
 .section-option div p{
     opacity: 0.6;
     text-align: center;
-    white-space: normal;
     width: 22vw;
 }
-
-/* ========================= Linha 3 ================================================ */
+/* ============================== LINHA 3 ============================================ */
 .getNotified{
     align-items: center;
     background-color: #E3E3E3;
@@ -236,9 +235,10 @@ footer{
     margin-right: 4px;
 }
 
+/* ============================== MOBILE ============================================= */
 @media(max-width: 800px){
-
-/* =========================== LINHA 1 ============================================ */
+    
+    /* =========================== LINHA 1 MOBILE ======================================== */
     header{
         height: 35vh;
     }
@@ -265,27 +265,70 @@ footer{
         justify-content: flex-end;
         width: 98%;    
     }
-
-/* ========================= Linha 2 ================================================ */
-
-.section-option{
-    align-items: flex-start;
-}
-.section-option div a{
-    padding: 10px;
-
-}
-.section-option div img{
-    height: 4vh;
-}
-.section-option div p{
-    display: none;
-}
-.section-option div h3{
-    font-size: 0.9rem;
-    padding: 3px
-    margin: 2px;
-    text-align: center;
-
-}
+    
+    /* ========================= Linha 2 MOBILE ================================================ */
+    
+    .section-option{
+        align-items: flex-start;
+        height: auto;
+        margin: 20px;
+    }
+    .section-option div a{
+        padding: 10px;
+        
+    }
+    .section-option div img{
+        height: 4vh;
+    }
+    .section-option div p{
+        display: none;
+    }
+    .section-option div h3{
+        font-size: 0.9rem;
+        padding: 3px
+        margin: 2px;
+        text-align: center;
+        
+    }
+    /* ========================== Linha 3 MOBILE ============================================== */
+    .section-input-video{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content:center;
+        padding: 15px;
+        
+    }
+    .section-input-video div{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .section-input-video div p{
+        width: 98vw;
+    }
+    .section-input-video div nav{
+        display: none;
+    }
+    .section-input-video div iframe{
+        display: none;
+    }
+    .section-input-video div .iframe-mobile{
+        display: block;
+    }
+    .section-input-video .nav-mobile{
+        display: flex;
+        margin-top: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+    .section-input-video .nav-mobile input{
+        width: 60vw;
+        
+    }
+    .section-input-video nav button{
+        width: 25vw;
+    }    
 }   
