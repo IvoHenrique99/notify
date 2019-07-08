@@ -164,29 +164,31 @@ header figure img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px;
 }
 .people p{
     margin: 0px;
-    padding: 0px;
     opacity: 0.5;
-}
-.people article p{
-    width: 60vw;
+    padding: 0px;
     text-align: center;
 }
-.people .container{
-    margin: 15px;
+.people article p{
+    margin-top: 30px; 
+    width: 70vw;
 }
-.people .container a:hover{
-  background-color:#2CBF60;
+.people .container{
+    display: flex;
+    height: 55px; 
+    justify-content: center;
+    margin: 15px;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+    width: 71vw;
 }
 .people .iconMedia{
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    margin: 20px;
-    width: 25vw;    
+    margin: 20px;  
 }
 .people .iconMedia a{
     align-items: center;
@@ -194,12 +196,13 @@ header figure img{
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    margin: 5px;
     padding: 10px;
-    
 }
-.people .iconMedia a:hover{
+.people a:hover{
     background-color:#2CBF60;
-}
+  }
+  
 
 /* ========================= Linha 5 ================================================= */
 footer{
@@ -213,11 +216,11 @@ footer{
 footer nav{
     display: flex;
     justify-content: space-evenly;
-    width: 40vw;
 }
 footer nav a{
     text-decoration: none;
     color:rgb(92, 92, 92); 
+    margin: 10px;
 }
 footer nav a:hover{
     color: white;
@@ -259,7 +262,9 @@ footer nav a:hover{
     .section-option{
         align-items: flex-start;
         height: auto;
-        margin: 20px;
+    }
+    .section-option div{
+        margin: 10px;
     }
     .section-option div a{
         padding: 10px;
@@ -273,20 +278,18 @@ footer nav a:hover{
     }
     .section-option div h3{
         font-size: 0.9rem;
-        padding: 3px
+        padding: 3px;
         margin: 2px;
         text-align: center;
         
     }
     /* ========================== Linha 3 MOBILE ============================================== */
     .section-input-video{
-        align-items: flex-start;
+        align-items: center;
         display: flex;
         flex-direction: column;
         height: auto;
-        justify-content:center;
-        padding: 15px;
-        
+        justify-content:center;      
     }
     .section-input-video div{
         align-items: center;
@@ -295,10 +298,16 @@ footer nav a:hover{
         width: 100%;
     }
     .section-input-video div p{
-        width: 98vw;
+        text-align: center;
+        width: auto;
     }
     .section-input-video div nav{
         display: none;
+    }
+    .section-input-video .nav-mobile{
+        display: flex;
+        margin: 15px;
+        justify-content: center;
     }
     .section-input-video div iframe{
         display: none;
@@ -306,17 +315,15 @@ footer nav a:hover{
     .section-input-video div .iframe-mobile{
         display: block;
     }
-    .section-input-video .nav-mobile{
-        display: flex;
-        margin-top: 15px;
-        justify-content: center;
-        width: 100%;
-    }
     .section-input-video .nav-mobile input{
-        width: 60vw;
+        width: 50vw;
         
     }
     .section-input-video nav button{
-        width: 25vw;
-    }    
+        width: 20vw;
+    }   
+ /*================================= Linha 5 MOBILE =================================================  */
+ .people article p{
+     width: auto;
+ }
 }   
